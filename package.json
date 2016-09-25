@@ -1,0 +1,40 @@
+{
+  "name": "hart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-ftp": "^1.1.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-phpcs": "^0.7.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1",
+    "gulp-uglifycss": "^1.0.4",
+    "node-sass": "^3.4.1",
+    "vinyl": "^1.1.0"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-zip": "^3.0.2",
+    "vinyl": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ";",
+  "license": "ISC"
+}

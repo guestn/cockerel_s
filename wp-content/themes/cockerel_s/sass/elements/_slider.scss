@@ -1,0 +1,83 @@
+.slider {
+	background: lighten($color__hilight, 10); 
+
+	.slick-slide {
+		background: $color__hilight;
+		position:relative;
+		transform: translate(0, -50%);
+	}
+}
+
+.hero-slider.slick-slider {
+	height: 40.5vw;
+	
+	.slick-slide {
+		position: relative;	
+	
+		img {
+			height: 40.5vw;
+			width: auto;
+		}
+		
+		h2 {
+			position:absolute;
+			top: 100px;
+			right: 5vw;
+			
+			// classes from WP-admin hero-text-color-i selector and hero-text-position-i selector //
+			&.dark { color: #333;}
+			&.light { color: #fff; }
+			
+			&.top-left { left: 5vw; right: auto; top: calc(5vw + 100); bottom: auto }
+			&.top-right { left: auto; right: 5vw; top: calc(5vw + 100); bottom: auto }
+			&.bottom-left { left: 5vw; right: auto; bottom: 5vw; top: auto }
+			&.bottom-right { left: auto; right: 5vw; bottom: 5vw; top: auto}
+			
+		}
+
+	}
+	
+	.slick-current .slick-slide.slick-current.dark {
+		.tagline-container h1 {
+			color: #333;
+		}
+	}
+	
+	.slick-dots {
+		bottom: 50px;
+		
+		button:before {
+			color: white;
+			font-size: 10px;
+		}
+	}
+}
+
+
+.slick-prev,
+.slick-next {
+	top: 50%;
+	transform: translateY(-50%);
+	
+	&:before {
+		position: absolute;
+	    width: 50px;
+	    height: 50px;
+	    border: 3px solid #aaa;
+	    border-left: none;
+	    border-bottom: none;
+	    cursor: pointer;
+	    //transition: all 0.5s;
+	}
+	
+}
+
+.slick-prev {
+	transform: scaleX(-1) rotate(45deg);
+	left: 50px;
+}
+
+.slick-next {
+	transform: rotate(45deg);
+	right: 50px;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="86" viewBox="0 0 100 86" version="1.1" class="spinner">
+    <g class="tri" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    	<polygon transform="translate(25.000000, 64.500000) scale(1, -1) translate(-25.000000, -64.500000) " points="25 43 50 86 0 86 " />
+		<polygon points="50 43 75 86 25 86 " />
+		<polygon transform="translate(75.000000, 64.500000) scale(1, -1) translate(-75.000000, -64.500000) " points="75 43 100 86 50 86 " />
+		<polygon points="75 0 100 43 50 43 " />
+		<polygon transform="translate(50.000000, 21.500000) scale(1, -1) translate(-50.000000, -21.500000) " points="50 0 75 43 25 43 " />
+		<polygon points="25 0 50 43 0 43 " />
+    </g>
+</svg>

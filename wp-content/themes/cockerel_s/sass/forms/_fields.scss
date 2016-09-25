@@ -1,0 +1,78 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea {
+	color: $color__text-input;
+	padding: 0.5em 1em 0.5em 1em;
+	border: 1px solid $color__hilight;
+	font-size: 1em;
+	line-height: 2em;
+	border-radius: 0px;
+	width: 100%;
+	background: rgba(50,50,50,0.2);
+
+	&:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+}
+
+textarea {
+	width: 100%;
+	height: 12.4em;
+	background: rgba(50,50,50,0.2);
+}
+
+input, 
+textarea {
+	&::-webkit-input-placeholder {
+	   text-transform: uppercase;
+	   color: $color__placeholder;		
+	}
+	
+	&:-moz-placeholder { /* Firefox 18- */
+	   text-transform: uppercase;
+	   color: $color__placeholder;  
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	   text-transform: uppercase;
+	   color: $color__placeholder; 	
+	}
+	&:-ms-input-placeholder {  
+	   text-transform: uppercase;
+	   color: $color__placeholder; 
+	}
+}
+// Contact Form validation errors
+
+span.wpcf7-not-valid-tip {
+	position: absolute;
+	left: 20px;
+}
+
+div.wpcf7-validation-errors {
+	width: 100%;
+	text-align: center;
+	margin: 0px auto;
+	border: 1px solid darken($color__hilight,10);
+	border-radius: 2px;
+	background: $color__hilight;
+	line-height: 2;
+}
+
+.wpcf7-response-output {
+	margin: 0px auto;
+}
+
+.wpcf7#wpcf7-f51-o1 .row p {
+	display: none;	
+}

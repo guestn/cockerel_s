@@ -1,0 +1,330 @@
+/*///////  Header  //////////*/
+
+$header-height: 100px;
+$header-top-height: 45px;
+
+
+.site-header {
+	position: fixed;
+	top:0;
+	left:0;
+	height: $header-height;
+	width: 100%;
+	background: rgba(150,150,150,0.2);
+	z-index: 100;
+	
+	.top-header {
+		background: $color__dark;
+		height: $header-top-height;
+		padding: 5px 5%;
+		
+		a {
+			padding: 0 10px;
+			color: $color__light;
+		}		
+		.quotation {
+			font-size: 1.5em;
+		}
+		.address {
+			font-size: 0.8em;
+		}
+		.phone h3 {
+			font-size: 2em;
+			margin-top: 0.1em;
+		}
+	}
+	
+	.site-logo {
+		position: relative;
+		display: block;
+		float: left;
+		width: 250px;
+	}
+}
+
+/*///////  Footer  //////////*/
+
+.site-footer {
+	position: relative;
+	background: $color__dark;
+	color: white;
+		
+	ul {
+		list-style: none;
+		margin: 0;
+	    -webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		-webkit-padding-start: 0px;
+	}
+	
+	ul.menu li {
+		text-transform: uppercase;
+		font-size: 1em;
+		margin: 1em 0 0.75em 0;
+		a {
+			color: white;
+		}
+		
+	}
+	
+	ul.sub-menu {
+		-moz-column-count: 2;
+		-moz-column-gap: 20px;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 20px;
+		column-count: 2;
+		column-gap: 10px;
+		padding: 0;
+
+	
+		li {
+			margin: 0 0 0.5em 0;
+
+			text-transform: none;
+			a {
+				color: $color__link;
+			}
+		}
+	}
+	
+	.top-footer {
+		position: relative;
+		background: $color__medium;
+		padding-top: 1em;
+	}
+	
+	.mid-footer {
+		position: relative;
+		padding-top: 1em;
+		
+		.address {
+			i { width: 1em;
+				position:relative;
+				//left: -1em;
+			}
+			a {
+				display: block;
+				text-indent: -1em;
+				padding-left: 2em;
+				
+				&:first-line {
+					padding-left: 0;
+				}
+			}
+		}
+		
+		.social-media {
+			text-align: center;
+		}
+		
+	}
+	
+	.final-footer {
+		margin-top: 2em;
+		margin-bottom: 0;
+		color: #888;
+		padding: 0.25em 2em;
+		background: rgba(255,255,255,0.2);
+		font-size: 0.8em;
+		
+		.copyright {
+			float: left;
+		}
+		
+		.author {
+			float: right;
+		}
+		
+		a img#author-logo {
+			display:inline-block;
+			height:1.4em;
+			margin-top: -0.3em;
+		}
+		
+		@media (max-width:768px) {
+			.copyright, .author {
+				display: block;
+				float: none;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+/*///////  Modal  //////////*/
+
+
+.modal-backdrop {
+	z-index: 1;
+}
+
+.modal {
+	margin-top: 20vh;
+	z-index: 999999;
+	line-height: 1.2;
+	
+	.modal-header, .modal-footer {
+		background: $color__hilight;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	textarea {
+		height: 5em;
+	}
+	
+	.wpcf7-not-valid-tip {
+		position: relative;
+		top: 5px;
+		line-height: 0.8;
+	}
+	
+	.wpcf7-validation-errors {
+		line-height: 1;
+	}
+}
+
+
+
+#contactModal {
+	.modal-dialog {
+		width:95%;
+		max-width: 1200px;
+		height: 60vh;
+		background: #aaa;
+		border-radius: 3px;
+		-webkit-clip-path: polygon(0 9%, 100% 0, 100% 85%, 0% 100%);
+		clip-path: polygon(0 9%, 100% 0, 100% 85%, 0% 100%);
+	}
+	#gmaps1 {
+		width:100%;
+		height: 100%;
+				-webkit-clip-path: polygon(0 9%, 100% 0, 100% 85%, 0% 100%);
+		clip-path: polygon(0 9%, 100% 0, 100% 85%, 0% 100%);
+	}
+	.legendblock {
+		position: absolute;
+		padding: 30px 70px 50px 30px;
+		top: 0px;
+		right: 0px;
+		width: 300px;
+// 		height: 250px;
+		color: white;
+		.close {
+			
+		}
+	}
+	i {
+		position: absolute;
+		font-size: 2em;
+		right:0.5em;
+		top: 0.5em;
+		opacity: 0.3;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.6;
+			text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+		}
+	}
+}
+
+
+
+
+/*/////////////////////////////////////////////*/
+
+
+/*///////  General Page Setup  //////////*/
+
+section {
+	margin-bottom: 2em;
+}
+
+
+/*///////  Homepage  //////////*/
+
+
+.hero {
+	position: relative;
+	text-align: center;
+	margin-bottom: 3vw;
+	overflow: hidden;
+	height: 40vw;
+	box-shadow: $shadow__light;
+	
+	/* Hero slider is in _slider.scss- this is the container */
+	
+	img {
+		width: 100%;
+	}
+	
+	img.hero-single {
+		width: 100%;
+	}
+	
+	
+	h1 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0 auto;
+		left: 0; right: 0;
+		//color: white;
+		text-transform: uppercase;
+		transition: all 1s;
+		
+		&.dark {color: #333;}
+		&.light {color: #fff}
+	}
+		
+	h2 {
+		position:absolute;
+		top: 100px;
+		right: 5vw;
+		
+		// classes from WP-admin hero-text-color-i selector and hero-text-position-i selector //
+		&.dark { color: #333;}
+		&.light { color: #fff; }
+		
+		&.top.left { left: 5vw; right: auto; top: calc(5vw + 100); bottom: auto }
+		&.top.right { left: auto; right: 5vw; top: calc(5vw + 100); bottom: auto }
+		&.bottom.left { left: 5vw; right: auto; bottom: 5vw; top: auto }
+		&.bottom.right { left: auto; right: 5vw; bottom: 5vw; top: auto}
+		
+	}
+	
+	.hero-video {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		
+		video {
+			width:100%;
+		}
+	}
+
+
+}
+
+/*///////  Contact Page  //////////*/
+
+section#googlemaps {
+	
+	#gmaps1 {
+		width:100%;
+		height: 300px;
+	}
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+}
+/*///////  Services SubPage  //////////*/
+
+
+/*///////  Who We Are page  //////////*/
+

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'DinAlternateBold';
+    src: url('fonts/DinAlternateBold.eot');
+    src: url('fonts/DinAlternateBold.eot') format('embedded-opentype'),
+         url('fonts/DinAlternateBold.woff2') format('woff2'),
+         url('fonts/DinAlternateBold.woff') format('woff'),
+         url('fonts/DinAlternateBold.ttf') format('truetype'),
+         url('fonts/DinAlternateBold.svgDinAlternateBold') format('svg');
+}
+
+
+
+
+$font__main: 'Futura', 'Montserrat', Helvetica, sans-serif;
+$font__bold: 'Futura', 'Montserrat', Helvetica, sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
